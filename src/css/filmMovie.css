@@ -1,0 +1,29 @@
+.filmMovie{
+	padding-top:50px ;
+	height: 46px;
+    margin: 0 auto;
+    border-bottom: solid #fe6e00 1px;
+}
+.filmMovie a{
+	float: left;
+	float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 46px;
+    cursor: pointer;
+    list-style: none;
+}
+.filmMovie a{
+	text-decoration: none;
+}
+.film-premiere-date{
+	line-height: 24px;
+    color: #ffb375;
+    font-size: 12px;
+}
+.filmactive{
+	color: #fe6e00;
+    border-bottom: solid;
+}

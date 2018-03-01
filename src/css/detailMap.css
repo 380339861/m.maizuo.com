@@ -1,0 +1,133 @@
+*{
+	margin: 0;padding: 0;
+}
+.district, .content ,.cinema-wrap ,.cinema-schedule-wrap ,.cinema-schedule-date {
+    margin: 2px auto;
+}
+
+.district ,.content ,.cinema-wrap {
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
+    min-width: 320px;
+}
+i,s{
+	text-decoration: none;
+	font-style: normal;
+}
+.district, .content, .cinema-wrap ,.cinema-schedule-wrap, .cinema-schedule-date ,.schedule-date-item {
+    height: 35px;
+    width: 96px;
+    margin: 5px 0 0 10px;
+    padding: 0 15px;
+    display: inline-block;
+    border-radius: 35px;
+    font-size: 10px;
+    line-height: 35px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+}
+.district, .content ,.cinema-wrap ,.cinema-schedule-wrap ,.cinema-schedule-date ,.schedule-date-item,.active {
+    background-color: #ff6a19;
+    color: #eee;
+}
+
+.district, .content, .cinema-wrap, .cinema-schedule-wrap, .cinema-schedule-date, .schedule-date-item {
+    height: 35px;
+    width: 96px;
+    margin: 5px 0 0 10px;
+    padding: 0 15px;
+    display: inline-block;
+    border-radius: 35px;
+    font-size: 10px;
+    line-height: 35px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+}
+
+.district ,.content ,.cinema-wrap ,.cinema-schedule-wrap, .cinema-schedule-list ,.schedule-detail ,.schedule-detail-item {
+    padding: 11px 20px 0;
+}
+.district, .content ,.cinema-wrap ,.cinema-schedule-wrap ,.cinema-schedule-list, .schedule-detail, .schedule-detail-item:last-child ,.schedule-detail-wrap {
+    border-bottom: none;
+}
+.district, .content, .cinema-wrap ,.cinema-schedule-wrap, .cinema-schedule-list ,.schedule-detail, .schedule-detail-wrap {
+    height: auto;
+    width: 100%;
+}
+.district, .content ,.cinema-wrap ,.cinema-schedule-wrap ,.cinema-schedule-list ,.schedule-detail ,.schedule-detail-wrap ,.schedule-detail-arrow {
+    float: right;
+    line-height: 60px;
+    color: #c6c6c6;
+}
+.district ,.content ,.cinema-wrap ,.cinema-schedule-wrap ,.cinema-schedule-list ,.schedule-detail, .schedule-detail-wrap ,.schedule-detail-left {
+    position: relative;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.district ,.content, .cinema-wrap, .cinema-schedule-wrap, .cinema-schedule-list, .schedule-detail ,.schedule-detail-wrap ,.schedule-detail-left, .schedule-detail-price {
+    font-size: 16px;
+    color: #f67222;
+    float: right;
+}
+.district, .content ,.cinema-wrap ,.cinema-schedule-wrap ,.cinema-schedule-list ,.schedule-detail, .schedule-detail-wrap ,.schedule-detail-left ,.schedule-detail-showtime {
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+}
+.district ,.content,.cinema-schedule-wrap {
+    color: #959595;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 83%;
+    font-size: 12px;
+}
+.schedule-detail-des{
+	font-size: 12px;
+    float: left;
+}
+.zuidaul{
+	width:100%;
+	height: 118px;
+	overflow: hidden;
+}
+.cinema-schedule-wrap ,.cinema-wrap{
+	border-bottom: solid 1px #8E8E8E!important ;
+    border-radius: 0px!important;
+}
+.cinema-schedule-wrap{
+	margin-left: -20px;
+}
+.active{
+	height: 35px;
+    width: 96px;
+    margin: 5px 0 0 10px;
+    padding: 0 15px;
+    display: inline-block;
+    border-radius: 35px;
+    font-size: 10px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    background-color: #ff6a19;
+    color: #eee
+}
+.schedule-detail{
+	padding-bottom: 20px;
+}
+.schedule-detail-left{
+	border-bottom: dashed 1px #555555;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
