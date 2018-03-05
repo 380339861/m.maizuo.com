@@ -38,7 +38,7 @@ class DetailMap extends Component {
 			.then((res)=>{
 				console.log(res)
 				this.setState({
-					datamoves:res.data.data.cinemas
+					datamoves:res.data.data.schedules
 				})
 			})
 		
@@ -51,11 +51,11 @@ class DetailMap extends Component {
 			{
 				this.state.mapslists.map(function(items,index){
 					return (
-					<div key={items.id} className="zuidaul">
+					<div key={items.id} className="zuidaul" >
 						<li>
-							<div className="cinema-wrap"  onClick={()=>that.upchang(index,items.id)}>
+							<div className="cinema-wrap" >
 								<div className="cinema clearfix">
-									<div className="cinema-title">
+									<div className="cinema-title" onClick={()=>that.upchang(index,items.id)}>
 										<div className="cinema-title-cinemaname">
 											<i>{items.name}</i>
 											<i className="iconfont icon-zuo book"></i>
@@ -77,6 +77,7 @@ class DetailMap extends Component {
 										</span>
 								</div>
 							</div>
+							
 						</li>
 						<div className="cinema-schedule-wrap clearfix">
 							<div className="cinema-schedule-date" >
@@ -86,45 +87,36 @@ class DetailMap extends Component {
 								<div className="schedule-date-item ">3天后(03/03)</div>
 								<div className="schedule-date-item ">4天后(03/04)</div>
 							</div>
-				
-								<div className="cinema-schedule-list">
-									<div className="schedule-detail">
-										<div className="schedule-detail-item">
-											<div className="schedule-detail-wrap clearfix">
-												<div className="schedule-detail-arrow">
-													<i className="iconfont icon-arrow-right"></i>
-												</div>
-												<div className="schedule-detail-left clearfix">
-													<div className="schedule-detail-price">
-														<span>￥43</span>
+							<ul>
+								{
+									that.state.datamoves.map(function(ipt,dex){
+										return(
+										<li key={dex}>	
+											<div className="cinema-schedule-list">
+												<div className="schedule-detail">
+													<div className="schedule-detail-item">
+														<div className="schedule-detail-wrap clearfix">
+															<div className="schedule-detail-arrow">
+																<i className="iconfont icon-arrow-right"></i>
+															</div>
+															<div className="schedule-detail-left clearfix">
+																<div className="schedule-detail-price">
+																	<span>￥{ipt.price.maizuo}</span>
+																</div>
+																<span></span>
+																<div className="schedule-detail-showtime" >20:25</div>
+																<div className="schedule-detail-des" >预计22:00结束/{ipt.film.language}{ipt.imagery}}/{ipt.hall.name}</div>
+																<div className="schedule-detail-origin-price">￥{ipt.price.cinema}</div>
+															</div>
+														</div>
 													</div>
-													<span></span>
-													<div className="schedule-detail-showtime" >20:25</div>
-													<div className="schedule-detail-des" >预计22:00结束/英语2D/VIP60帧激光厅</div>
-													<div className="schedule-detail-origin-price">￥120.00</div>
-												</div>
-												<div className="schedule-detail-left clearfix">
-													<div className="schedule-detail-price">
-														<span>￥42</span>
-													</div>
-													<span></span>
-													<div className="schedule-detail-showtime" >20:25</div>
-													<div className="schedule-detail-des" >预计22:00结束/英语2D/VIP60帧激光厅</div>
-													<div className="schedule-detail-origin-price">￥120.00</div>
-												</div>
-												<div className="schedule-detail-left clearfix">
-													<div className="schedule-detail-price">
-														<span>￥79</span>
-													</div>
-													<span></span>
-													<div className="schedule-detail-showtime" >20:25</div>
-													<div className="schedule-detail-des" >预计22:00结束/英语3D/VIP60帧激光厅</div>
-													<div className="schedule-detail-origin-price">￥120.00</div>
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
+										</li>	
+										)
+									})
+								}
+							</ul>
 						
 						</div>
 					</div>	

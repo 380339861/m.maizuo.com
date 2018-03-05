@@ -131,3 +131,14 @@ i,s{
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
+.cinema-title{
+	position: relative;
+}
+.btnjazaiDate{
+	width: 414px;
+	height: 128px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
